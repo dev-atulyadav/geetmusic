@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const page = () => {
+const AboutPage = () => {
   return (
     <section className="w-full min-h-screen ">
       <main className="max-w-6xl mx-auto px-6 py-12">
@@ -158,4 +158,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;

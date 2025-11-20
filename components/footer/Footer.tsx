@@ -71,10 +71,10 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="inset-xl bg-gray-200 p-2 rounded-xl">
+    <footer className="p-2 border-t">
       <div className="flex justify-between items-center p-4 border-b">
         <h4 className="text-xl font-bold uppercase">Get Connected with Us.</h4>
-        <ul className="flex justify-center items-center gap-4 bg-white p-1.5 inset-xl rounded-lg">
+        <ul className="flex justify-center items-center gap-4 p-1.5">
           {socialLinks.map((link, index) => (
             <li key={index}>
               <Link href={link.url}>
@@ -85,7 +85,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="p-4 uppercase text-sm">
-        <ul className="grid grid-cols-5 gap-4 border-b pb-4 font-semibold">
+        <ul className="grid grid-cols-5 gap-4 border-b pb-4">
           {footerLinks.map((link, index) => (
             <li key={index}>
               <Link href={link.url}>{link.name}</Link>

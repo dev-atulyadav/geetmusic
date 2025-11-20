@@ -57,12 +57,12 @@ export default function ExploreMusic() {
     },
   ];
   return (
-    <section className="flex items-center justify-center p-10">
-      <main className="flex items-center justify-center flex-col gap-8 w-full h-full">
-        <div className="flex items-center justify-center w-full h-full">
-          <h1 className="text-4xl font-bold">Explore Music With Us...</h1>
+    <section className="min-h-screen w-full flex flex-col justify-center items-center">
+      <main className="flex flex-col justify-center items-center py-8 px-8">
+        <div className="mb-8 text-center">
+          <h2 className="text-4xl font-semibold">Explore Music With Us...</h2>
         </div>
-        <article className="flex justify-center items-center gap-8 rounded-xl bg-gray-200 p-8 inset-3xl">
+        <article className="flex">
           {cardData.map((data, index) => (
             <div key={index}>
               <ExploreMusicCard data={data} />

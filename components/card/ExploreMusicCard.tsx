@@ -5,15 +5,15 @@ import { CardType } from "../home/ExploreMusic";
 
 const ExploreMusicCard = ({ data }: { data: CardType }) => {
   return (
-    <div className="flex justify-center items-center gap-8 inset-3xl flex-col p-4 rounded-xl bg-white">
-      <div className="bg-gray-100 inset-3xl rounded-tl-2xl rounded-br-2xl w-full flex justify-center items-center py-4">
+    <div className="shadow-xl rounded-xl p-6 m-4 flex flex-col justify-center items-center gap-4 max-w-xs">
+      <div className="border-b">
         <Image src={data.img} alt="not found" height={250} width={250} />
       </div>
-      <div className="w-[80%]">{data.p}</div>
+      <div className="text-center">{data.p}</div>
 
       <Link
         href={data.link.url}
-        className="self-end px-2 py-1.5 text-blue-500 border border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white duration-300"
+        className="px-2 py-1.5 bg-slate-900 text-white rounded-lg hover:bg-slate-950 transition-colors font-semibold self-end"
       >
         {data.link.name}
       </Link>

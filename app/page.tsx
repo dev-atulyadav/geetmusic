@@ -1,11 +1,13 @@
+import AboutUs from "@/components/home/AboutUs";
 import ExploreMusic from "@/components/home/ExploreMusic";
-import LandingPage from "@/components/home/LandingPage";
+import HomePage from "@/components/home/HomePage";
 
 export default function Home() {
   return (
     <>
-      <LandingPage />
-      <ExploreMusic />
+      <HomePage />
+      <AboutUs/>
+      <ExploreMusic/>
     </>
   );
 }
