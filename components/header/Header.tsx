@@ -53,7 +53,7 @@ export default function Header() {
       <div className="">
         <Link
           href="/login"
-          className="border px-2.5 py-1.5 hover:text-emerald-500 border-emerald-500 rounded-lg bg-emerald-500 text-white transition-colors hover:bg-white"
+          className="border px-2.5 py-1.5 hover:text-white hover:border-white border-transparent rounded-lg bg-emerald-500 text-white transition-colors hover:bg-transparent "
         >
           Get Started
         </Link>
