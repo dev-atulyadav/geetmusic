@@ -62,7 +62,7 @@ export default function ExploreMusic() {
         <div className="mb-8 text-center">
           <h2 className="text-4xl font-semibold">Explore Music With Us...</h2>
         </div>
-        <article className="flex">
+        <article className="flex flex-wrap md:flex-nowrap justify-center items-center">
           {cardData.map((data, index) => (
             <div key={index}>
               <ExploreMusicCard data={data} />
